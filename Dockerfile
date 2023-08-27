@@ -19,5 +19,7 @@ RUN npm install \
 
 EXPOSE 3000
 
+ENV key1=value1 key2=value2
+# VOLUME [ "/data" ]
 # Start the app using serve command
 CMD [ "serve", "-s", "build" ]
